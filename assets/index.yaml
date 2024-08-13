@@ -4,7 +4,6 @@ entries:
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/display-name: Virtual Clusters
-      catalog.cattle.io/kube-version: '>= 1.16.0-0 < 1.29.0-0'
       catalog.cattle.io/namespace: cattle-ui-plugin-system
       catalog.cattle.io/os: linux
       catalog.cattle.io/permits-os: linux, windows
@@ -14,12 +13,12 @@ entries:
       catalog.cattle.io/ui-extensions-version: '>= 2.0.0'
     apiVersion: v2
     appVersion: 0.1.0
-    created: "2024-08-13T16:52:05.561502+01:00"
+    created: "2024-08-13T22:32:36.324152+01:00"
     description: Virtual Cluster support
-    digest: 9e9e8ccee29680467cb0faa3e73ce69a1f631bc468636cf8c19a69725c931e1d
+    digest: aa18360bcfcb7c869ffc717487e092292a81cea66c97c8d9d129af6b09122dba
     name: virtual-clusters
     type: application
     urls:
     - assets/virtual-cluster/virtual-clusters-0.1.0.tgz
     version: 0.1.0
-generated: "2024-08-13T16:52:05.560281+01:00"
+generated: "2024-08-13T22:32:36.323428+01:00"
