@@ -1,0 +1,11 @@
+vcluster:
+  label: vCluster
+
+  fields:
+    hostCluster: Host Cluster
+    k8sVersion: Kubernetes Version
+
+cluster:
+  providerGroup:
+    create-virtual: Create a Virtual Cluster inside of a Host Cluster
+  
