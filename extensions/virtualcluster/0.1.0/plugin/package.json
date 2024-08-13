@@ -1,5 +1,5 @@
 {
-  "name": "virtual-clusters",
+  "name": "virtualcluster",
   "description": "Virtual Cluster support",
   "version": "0.1.0",
   "private": false,
@@ -15,5 +15,5 @@
   "files": [
     "**/*"
   ],
-  "main": "virtual-clusters-0.1.0.umd.min.js"
+  "main": "virtualcluster-0.1.0.umd.min.js"
 }

@@ -11,6 +11,6 @@ annotations:
 apiVersion: v2
 appVersion: 0.1.0
 description: Virtual Cluster support
-name: virtual-clusters
+name: virtualcluster
 type: application
 version: 0.1.0
