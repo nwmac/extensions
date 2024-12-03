@@ -12,6 +12,8 @@ Note: This extension relies on some PoC changes to Rancher that add a couple of 
 
 With the extension installed, a new option appears on the cluster creation screen allowing you to create a virtual cluster.
 
+Code for this extension is in the `pkg/virtualcluster` folder.
+
 ### How this works
 
 This demo does not require any backend changes or components.
