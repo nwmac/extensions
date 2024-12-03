@@ -1,8 +1,0 @@
-plugin/img/icon.99f60a22.svg
-plugin/package.json
-plugin/virtualcluster-0.1.0.umd.min.1.js
-plugin/virtualcluster-0.1.0.umd.min.1.js.map
-plugin/virtualcluster-0.1.0.umd.min.2.js
-plugin/virtualcluster-0.1.0.umd.min.2.js.map
-plugin/virtualcluster-0.1.0.umd.min.js
-plugin/virtualcluster-0.1.0.umd.min.js.map

@@ -1,2 +1,0 @@
-(("undefined"!==typeof self?self:this)["webpackJsonpvirtualcluster_0_1_0"]=("undefined"!==typeof self?self:this)["webpackJsonpvirtualcluster_0_1_0"]||[]).push([[2],{"1bb6":function(e,s){const t=[{vcluster:{label:"vCluster",fields:{hostCluster:"Host Cluster",k8sVersion:"Kubernetes Version"}},cluster:{providerGroup:{"create-virtual":"Create a Virtual Cluster inside of a Host Cluster"}}}];e.exports=t.length<=1?t[0]:t}}]);
-//# sourceMappingURL=virtualcluster-0.1.0.umd.min.2.js.map
