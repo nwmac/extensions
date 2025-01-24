@@ -66,10 +66,12 @@ export default {
       required: true,
     },
 
-    value: {
-      type:     Object,
-      required: true,
-    },
+    // value: {
+    //   type:     Object,
+    //   default: () => {
+    //     return {};
+    //   }
+    // },
 
     provider: {
       type:     String,
@@ -255,7 +257,7 @@ export default {
   >
     <NameNsDescription
       v-if="!isView"
-      v-model="value"
+      :value="value"
       :mode="mode"
       :namespaced="false"
       name-label="cluster.name.label"
@@ -276,7 +278,7 @@ export default {
         <div class="row">
           <div class="col span-6">
             <LabeledSelect
-              v-model="parentCluster"
+              v-model:value="parentCluster"
               :label="t('vcluster.fields.hostCluster')"
               :localized-label="true"
               :mode="mode"
@@ -287,7 +289,7 @@ export default {
         <div class="row mt-20">
           <div class="col span-6">
             <LabeledSelect
-              v-model="k8sVersion"
+              v-model:value="k8sVersion"
               :label="t('vcluster.fields.k8sVersion')"
               :localized-label="true"
               :mode="mode"
@@ -315,11 +317,11 @@ export default {
         />
       </Tab>
       <AgentEnv
-        v-model="value"
+        :value="value"
         :mode="mode"
       />
       <Labels
-        v-model="value"
+        :value="value"
         :mode="mode"
       />
     </Tabbed>

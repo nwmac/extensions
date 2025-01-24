@@ -8,10 +8,6 @@ type ICluster = any;
 export class VClustersProvisioner implements IClusterProvisioner {
   static ID = 'vcluster'
 
-  // static useForModel(cluster: ICluster) {
-  //   return false;
-  // }
-
   constructor(private context: ClusterProvisionerContext) {
     mapDriver(this.id, 'vcluster' );
   }
@@ -34,42 +30,5 @@ export class VClustersProvisioner implements IClusterProvisioner {
 
   get component(): Component {
     return CruVCluster;
-  }
-
-  get detailTabs(): any {
-    return {
-      machines:     false,
-      logs:         false,
-      registration: false,
-      snapshots:    false,
-      related:      true,
-      events:       false,
-      conditions:   false,
-    };
-  }
-
-  machineProviderDisplay(): string {
-    return 'vCluster';
-  }
-
-  parentCluster(cluster: ICluster): string {
-    return cluster.metadata?.annotations?.['ui.rancher/parent-cluster'];
-  }
-
-  async postDelete(cluster: ICluster): Promise<any> {
-    const parentClusterId = cluster.metadata?.annotations?.['ui.rancher/parent-cluster'];
-    const namespace = cluster.metadata?.annotations?.['ui.rancher/vcluster-namespace'];
-
-    // Should probably show a growl
-    if (parentClusterId && namespace) {
-      try {
-        await cluster.$dispatch('request', {
-          url:    `/k8s/clusters/${ parentClusterId }/api/v1/namespaces/${ namespace }`,
-          method: 'DELETE',
-        });
-      } catch (e) {
-        console.error(e); // eslint-disable-line no-console
-      }
-    }
   }
 }
