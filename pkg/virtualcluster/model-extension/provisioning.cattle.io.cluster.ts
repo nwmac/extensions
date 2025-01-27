@@ -1,11 +1,11 @@
-import { ClusterProvisionerContext, IClusterModelExtension } from '@shell/core/types';
+import { ModelExtensionContext, IClusterModelExtension } from '@shell/core/types';
 
 type ICluster = any;
 
 const ID = 'vcluster';
 
 export class VClusterModelExtension implements IClusterModelExtension {
-  constructor(private context: ClusterProvisionerContext) {}
+  constructor(private context: ModelExtensionContext) {}
 
   useFor(cluster: ICluster) {
     return cluster.machineProvider === ID;

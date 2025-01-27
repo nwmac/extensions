@@ -17,6 +17,8 @@ export default function(plugin: IPlugin): void {
   // Register a model extension for the provisioning model
   plugin.addModelExtension('provisioning.cattle.io.cluster', VClusterModelExtension);
 
+  plugin.addProduct(require('./product'));
+
   // Built-in icon
   plugin.metadata.icon = require('./icon.svg');
 }

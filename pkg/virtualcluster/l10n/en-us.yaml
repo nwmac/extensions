@@ -9,3 +9,6 @@ cluster:
   providerGroup:
     create-virtual: Create a Virtual Cluster inside of a Host Cluster
   
+resourceTable:
+  groupBy:
+    hostCluster: Group by Host Cluster
